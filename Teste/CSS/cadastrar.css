@@ -1,0 +1,195 @@
+
+.cadastrar{
+  display: flex;
+}
+
+::-webkit-input-placeholder{
+  /* color: orange; */
+  color: black;
+}
+
+.opcoesMenu{
+  position: absolute;
+  flex-direction: column;
+  width: 200px;
+  height: 100%;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.alinhaMenu{  
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button{
+ display: flex;
+ background-color: black;
+ position: absolute;
+ border: none;
+ color: #FFFFFF;
+ text-align:start ;
+ font-size: 15px;
+ width: 100px;
+ height: 30px;
+ transition: all 0.5s;
+ cursor: pointer;
+ border-radius: 5px;
+}
+
+button {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.5s;
+}
+
+button:after {
+ content: '»';
+ position: absolute;
+ opacity: -5;
+ top: 5%;
+ right: -35%;
+ left: 65px; 
+ transition: 0.5s;
+}
+
+button:hover {
+ padding-right: 15px;
+ background-color: white;
+ color:black;
+ border: 2px solid black;
+ border-radius: 5px;
+}
+
+button:hover:after {
+ opacity: 1;
+ right: 0;
+}
+
+.menuBotao{
+  text-decoration: none;
+  margin-top: 5%;
+}
+
+.menuBotao > button{
+  border-radius: 5px;
+  margin-top: 10%;
+}
+
+.conteudo{
+  margin-top: 5%;
+  margin-left: 30%;
+  background-color: rgba(255, 255, 255, 0.9); 
+  display: flex;
+  flex-direction: row; 
+  position: relative;   
+  border-radius: 5px;
+}
+
+.cadastro{
+  border-radius: 5px;
+  border-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.colorB{
+  background: black;
+  color: orange;
+  transition: 0.5s;
+}
+
+.colorB:hover{
+  background: orange;
+  color: black;
+  /* border-top: 3px solid orange; */
+}
+
+
+
+ @media only screen and (max-width: 800px) and (min-width: 600px) {
+  .opcoesMenu{
+    position: word-wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    border-radius: 5px;
+    min-width:fit-content;
+  }
+
+  .alinhaMenu{  
+    display: list-item;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 3%;
+  }  
+
+  .menuBotao > button{
+    border-radius: 5px;
+    margin-top: 0%;
+    justify-content: center;
+  }
+
+  .cadastrar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .conteudo{
+    margin-top: 20%; 
+    margin-left: 0%;
+    border-radius: 5px;
+    /* width: 40%;  */
+   }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .opcoesMenu{
+    /* position: fixed; */
+    position: word-wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    border-radius: 5px;
+    min-width:fit-content; 
+  }
+
+  .alinhaMenu{  
+    display: list-item;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px; 
+  }
+
+  .menuBotao {
+    justify-content: center;
+    border-radius: 5px;
+  } 
+
+   .menuBotao > button{
+    border-radius: 5px;
+    margin-top: 0%;
+    justify-content: center;
+  }
+
+  .cadastrar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .conteudo{
+    margin-top: 20%; 
+    margin-left: 0%;
+    border-radius: 5px;
+  }
+}  

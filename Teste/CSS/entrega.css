@@ -1,0 +1,244 @@
+.menuDivmae{
+  display: flex;
+  flex-direction: row;
+}
+
+.divmae{
+  padding: 20px 20px 20px 55px;
+  margin-top: 5%;
+  margin-left: 35%;
+  border: 3px solid black;
+  background-color: rgba(255, 255, 2550, 0.9);
+  width: 520px;
+  border-radius: 5px;
+}
+
+.divideTela{
+  display:flex ;
+  flex-direction:row ;
+}
+
+.divideColuna{
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.as{
+  margin-top: 5%; 
+  text-decoration: none;
+
+}
+
+.as > button{
+  border-radius: 5px;
+  margin-top: 10%;
+  
+}
+
+.envia{
+  background-color: green;
+  color: white;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 110px;
+  height: 40px;
+  margin-left: 8px;
+}
+
+.envia:hover{
+  background-color: #066f06;
+}
+
+
+label{
+  margin-top: 10px;
+}
+
+button {
+  display: flex;
+  background-color: black;
+  position: absolute;
+  left: -30px;
+  border: none;
+  color: #FFFFFF;
+  text-align:left ;
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button:after {
+  content: '»';
+  position: absolute;
+  opacity: -5;
+  top: 5%;
+  right: -35%;
+  left: 65px;
+  transition: 0.5s;
+}
+
+button:hover {
+  padding-right: 15px;
+  background-color: white;
+  color:black;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+button:hover:after {
+  opacity: 1;
+  right: 0;
+}
+
+.radioBt{
+  margin-right: 10px;
+}
+
+.opcoesMenu{
+  background-color: black;
+  width: 250px;
+  padding-top: 35px;
+  padding-left: 2%;
+  margin-right: 5%; 
+  height: 100%;
+  position: absolute;
+}
+
+.alinhaMenu{
+  display: flex;
+  flex-direction: column;
+}
+
+.campoGrande{
+  width: 386px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .opcoesMenu {
+    width: 250px;
+    padding-top: 35px;
+    padding-left: 50px;
+    height: 125%;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .opcoesMenu {
+    width: 250px;
+    padding-top: 35px;
+    padding-left: 50px;
+    height: 125%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .opcoesMenu {
+    width: 125%;
+    padding-top: 35px;
+    height: 100px;
+    position: relative;
+    justify-content: center;
+  }
+
+  .as{
+    margin-top: 0%;
+    text-decoration: none;
+  }
+
+  .as > button{
+    border-radius: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+  }
+
+  .alinhaMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    padding-left: 10%;
+  }
+  
+  .divideTela{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+  }
+  
+  .divmae{
+    width: 325px;
+    margin-left: 0%;
+  }
+  
+  .campoGrande{
+    width: 190px;
+  }
+  .menuDivmae{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  .radioBt{
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .opcoesMenu {
+    width: 125%;
+    padding-top: 35px;
+    height: 100px;
+    position: relative;
+  }
+
+  .as{
+    margin-top: 0%;
+    text-decoration: none;
+  }
+
+  .as > button{
+    border-radius: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+  }
+
+  .alinhaMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    padding-left: 10%;
+  }
+  
+  .divideTela{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .divmae{
+    width: 325px;
+    margin-left: 0%;
+  }
+  
+  .campoGrande{
+    width: 190px;
+  }
+
+  .radioBt{
+    margin-right: 50px;
+  }
+}
